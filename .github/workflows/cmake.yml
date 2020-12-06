@@ -30,7 +30,7 @@ jobs:
     - name: Build
       shell: bash
       # Execute the build.  You can specify a specific target with "--target <NAME>"
-      run: pwd && ls && cmake --build ./fifth/cmake-build-debug --target OpenMPLabs -- -j 6
+      run: cd fifth && ls && cmake --build ./fifth/cmake-build-debug --target OpenMPLabs -- -j 6
 
     - name: Run
       shell: bash
